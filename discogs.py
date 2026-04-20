@@ -1,5 +1,6 @@
 import requests
 import sys
+import json
 from simple_term_menu import TerminalMenu
 
 class Datastore:
@@ -114,8 +115,7 @@ def main3():
 def search(index, s_string):
     U.set_payload(index, s_string)
     r = requests.get(f"{Search}", params=U.payload, headers = U.headers)
-    print(r.url)
-    print(r.text)
+    print(json.dumps(r.json(), indent = 2))
 
 
 main()
