@@ -7,7 +7,7 @@ from datastore import menustate
 from oauth import Oauth_token
 
 K = KeyStore()
-U = Datastore("WickedDiscogsCLI/1.0")
+U = Datastore("WickedDiscogsCLI/1.1")
 M = menustate()
 Search = Datastore.search_url
 
