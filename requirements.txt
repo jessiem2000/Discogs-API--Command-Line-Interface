@@ -1,1 +1,4 @@
 simple-term-menu
+requests-oauthlib
+keyring
+platformdirs
